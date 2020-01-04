@@ -1,6 +1,6 @@
-import React, {Fragment} from 'react';
-import {StatusBar, SafeAreaView} from 'react-native';
-import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
+import React, { Fragment } from 'react';
+import { StatusBar, SafeAreaView } from 'react-native';
+import { Header, Colors } from 'react-native/Libraries/NewAppScreen';
 import Styled from 'styled-components/native';
 
 const ScrollVew = Styled.ScrollView`
@@ -39,7 +39,7 @@ const App = ({}: Props) => {
           <Body>
             <SectionContainer>
               <SectionDescription>
-                Hi, <HighLight>Hello, World!</HighLight>
+                <HighLight>Hello, World!</HighLight>
               </SectionDescription>
             </SectionContainer>
           </Body>
