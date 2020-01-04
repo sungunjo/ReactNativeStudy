@@ -19,7 +19,7 @@ const TitleLabel = Styled.Text`
 const CountContainer = Styled.View`
   flex: 2;
   justify-content: center;
-  algin-items: center;
+  align-items: center;
 `;
 
 const CountLabel = Styled.Text`
@@ -30,7 +30,7 @@ const CountLabel = Styled.Text`
 const ButtonContainer = Styled.View`
   flex: 1;
   flex-direction: row;
-  flex=wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
 `;
 

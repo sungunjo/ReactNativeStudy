@@ -1,51 +1,17 @@
-import React, { Fragment } from 'react';
-import { StatusBar, SafeAreaView } from 'react-native';
-import { Header, Colors } from 'react-native/Libraries/NewAppScreen';
+import React from 'react';
 import Styled from 'styled-components/native';
+import Counter from './Screens/Counter';
 
-const ScrollVew = Styled.ScrollView`
-  background-color: ${Colors.lighter};
+const Container = Styled.View`
+  flex: 1;
+  background-color: #EEE;
 `;
 
-const Body = Styled.View`
-  background-color: ${Colors.white};
-`;
-
-const SectionContainer = Styled.View`
-  margin-top: 32px;
-  padding-horizontal: 24px;
-`;
-
-const SectionDescription = Styled.Text`
-  margin-top: 8px;
-  font-size: 18px;
-  font-weight: 300;
-  color: ${Colors.dark};
-`;
-
-const HighLight = Styled.Text`
-  font-weight: 700;
-`;
-
-interface Props {}
-
-const App = ({}: Props) => {
+const App = () => {
   return (
-    <Fragment>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollVew contentInsetAdjustmentBehavior="automatic">
-          <Header />
-          <Body>
-            <SectionContainer>
-              <SectionDescription>
-                <HighLight>Hello, World!</HighLight>
-              </SectionDescription>
-            </SectionContainer>
-          </Body>
-        </ScrollVew>
-      </SafeAreaView>
-    </Fragment>
+    <Container>
+      <Counter title="This is a Counter App" initValue={5} />
+    </Container>
   );
 };
 
