@@ -17,7 +17,7 @@ const TitleLabel = Styled.Text`
 `;
 
 const CountContainer = Styled.View`
-  flex: 2;
+  flex: 1;
   justify-content: center;
   align-items: center;
 `;
@@ -45,17 +45,17 @@ const Counter = ({ title, initValue }: Props) => {
   return (
     <Container>
       {title && (
-        <TitleContainer>
-          <TitleLabel>{title}</TitleLabel>
-        </TitleContainer>
+      	<TitleContainer>
+        	<TitleLabel>{title}</TitleLabel>
+      	</TitleContainer>
       )}
-      <CountContainer>
-        <CountLabel>{initValue + count}</CountLabel>
-      </CountContainer>
       <ButtonContainer>
         <Button iconName="plus" onPress={() => setCount(count + 1)}/>
         <Button iconName="minus" onPress={() => setCount(count -1)}/>
       </ButtonContainer>
+      <CountContainer>
+        <CountLabel>{initValue + count}</CountLabel>
+      </CountContainer>
     </Container>
   );
 };
