@@ -4,7 +4,7 @@ import HelloWorld from './Screens/HelloWorld';
 const App = () => {
   return (
     <>
-      <HelloWorld greetings="Hi" initName="Jo" />
+      <HelloWorld greetings="hi" initName="Jo" />
     </>
   );
 };
