@@ -8,7 +8,7 @@ interface Props {}
 const App = ({  }: Props) => {
   return (
     <Fragment>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <Text>Hello, World!</Text>
       </SafeAreaView>
