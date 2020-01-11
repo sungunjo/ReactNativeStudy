@@ -162,6 +162,6 @@ class Counter extends React.Component<Props, State> {
       error: true,
     });
   }
-};
+}
 
 export default Counter;

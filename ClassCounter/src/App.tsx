@@ -4,13 +4,13 @@ import Counter from './Screens/Counter';
 
 const Container = Styled.View`
   flex: 1;
-  background-color: #0dd;
+  background-color: #eee;
 `;
 
 const App = () => {
   return (
     <Container>
-      <Counter title="This is a Counter App2" initValue={5} />
+      <Counter title="This is a ClassCounter App" initValue={5} />
     </Container>
   );
 };
