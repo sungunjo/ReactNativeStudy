@@ -10,7 +10,7 @@ const App = ({  }: Props) => {
     <Fragment>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <Text>Hello, World!</Text>
+        <Text>TodoList</Text>
       </SafeAreaView>
     </Fragment>
   );
