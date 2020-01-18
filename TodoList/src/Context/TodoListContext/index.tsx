@@ -5,6 +5,7 @@ interface Props {
 	children: JSX.Element | Array<JSX.Element>;
 }
 
+/* Context 생성 */
 const TodoListContext = createContext<ITodoListContext>({
 	todoList: [],
 	addTodoList: (todo: string): void => {},
