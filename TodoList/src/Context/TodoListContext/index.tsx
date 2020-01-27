@@ -50,9 +50,9 @@ const TodoListContextProvider = ({ children }: Props) => {
 				addTodoList,
 				removeTodoList,
 			}}>
-				{children}
+			{children}
 		</TodoListContext.Provider>
 	);
 };
 
-export { TodoListContextProvider, TodoListContext };
+export { TodoListContextProvider, TodoListContext }; 

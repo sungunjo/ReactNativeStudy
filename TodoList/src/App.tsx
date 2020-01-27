@@ -1,18 +1,21 @@
 import React, { Fragment } from 'react';
-import { StatusBar, SafeAreaView, Text } from 'react-native';
-
 import Styled from 'styled-components/native';
+import { TodoListContextProvider } from '~/Context/TodoListContext'
+import Todo from './Screens/Todo'
 
-interface Props {}
+const Container = Styled.View`
+  flex: 1;
+  background-color: #EEE;
+`;
 
-const App = ({  }: Props) => {
+const App = () => {
   return (
-    <Fragment>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <Text>TodoList</Text>
-      </SafeAreaView>
-    </Fragment>
+    <TodoListContextProvider>
+      <Container>
+        <TodoListView />
+        <AddTodo />
+      </Container>
+    </TodoListContextProvider>
   );
 };
 
